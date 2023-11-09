@@ -6,14 +6,14 @@ export const MainSection = styled.div`
 
 export const ContainerNav = styled.div`
   display: flex;
-  position: absolute;
   width: 95%;
   margin-top: 60px;
+  position: absolute;
 `;
 
 export const ContainerNavUL = styled.ul`
   display: flex;
-  gap: 75px;
+  gap: 70px;
   margin-left: 50%;
   list-style-type: none;
   color: white;

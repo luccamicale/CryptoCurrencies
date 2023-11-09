@@ -39,6 +39,68 @@ font-weight: 100;
 
 export const ContainerArrowDown = styled.div`
   margin-left: 50%;
-  margin-top: 650px;
+  margin-top: 43%;
   position: absolute;
+`;
+
+export const SecurePrivate = styled.div`
+  position: absolute;
+  margin: 50%;
+  width: 300px;
+  margin-top: 58%;
+  margin-left: 42%;
+`;
+
+export const SecureText = styled.p`
+  font-size: 35px;
+  color: whitesmoke;
+  font-family: 'Lora', serif;
+`;
+
+export const ContainerBoxsecure = styled.div`
+  display: flex;
+`;
+
+export const Boxgeneral = styled.div`
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #240046, #C31432); /* Agregar degradado de color */
+  width: 300px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 35px;
+  margin-top: 72%;
+  margin-left: 7%;
+  box-shadow: 2px 2px 2px 2px;
+  opacity: 0.7;
+`;
+
+export const ConatinerBoxIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: -75px;
+  margin-bottom: 20px;
+`;
+
+export const ConatinerBoxTitle = styled.span`
+  color: whitesmoke;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+`;
+
+export const ConatinerBoxText = styled.span`
+  color: whitesmoke;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+export const GraficoInvest = styled.img`
+  border-radius: 46px;
+  margin-left: 55%;
+  margin-top: 100px;
 `;
