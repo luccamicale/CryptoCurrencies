@@ -35,6 +35,8 @@ margin-left: 10%;
 margin-top: 60px;
 color: whitesmoke;
 font-weight: 100;
+/* background: linear-gradient(to bottom, #C31432, #240046);
+border-radius: 16px; */
 `;
 
 export const ContainerArrowDown = styled.div`
@@ -108,3 +110,31 @@ export const GraficoInvest = styled.img`
   margin-left: 55%;
   margin-top: 100px;
 `;
+
+export const ContainerChart = styled.div`
+  margin-top: 150px;
+`;
+
+export const TitleChart = styled.h2`
+  margin-bottom: 50px;
+  font-family: 'Lora', serif;
+  text-align: center;
+  font-weight: 100;
+  color: #c77dff;
+`;
+
+export const SubTitleChart = styled.h3`
+  color: #ff8fab;
+  margin-bottom: 50px;
+  font-family: 'Lora', serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: 15px;
+  margin-top: 40px;
+`;
+
+export const ContainerHr = styled.hr`
+  width: 85%;
+  font-weight: 100;
+`;
+

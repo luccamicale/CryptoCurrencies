@@ -1,11 +1,11 @@
 import React from "react";
 import phonebit from '../../imgs/phonebit.jpg'
 import iconBitcoin from '../../imgs/iconBitcoin.png'
-import iconintercambio from '../../imgs/iconintercambio.png'
+import circuloBt from '../../imgs/circuloBT.jpeg'
 import privacidad from '../../imgs/privacidad.png'
 import reembolso from '../../imgs/reembolso.png'
 import graficoinvest from '../../imgs/graficoinvest.jpeg'
-import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContainerArrowDown, ContainerBoxsecure, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, WordlBitcoin } from "./style.ts";
+import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerHr, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SubTitleChart, TitleChart, WordlBitcoin } from "./style.ts";
 import '../../styles/styles.css'
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { TiTick } from "react-icons/ti";
@@ -15,7 +15,7 @@ import BarChart from "../../Graphics/BarChart";
 
 function Home() {
 
-  const securityPercentages = [70, 48, 36, 20, 15];
+  const securityPercentages = [85, 68, 46, 30, 20];
 
   return (
     <div className="App">
@@ -68,13 +68,16 @@ function Home() {
         </ContainerBoxsecure>
 
         
-        <div style={{marginTop: '150px'}}>
-          {/* <h1>Porcentajes de Seguridad en Plataformas</h1> */}
-            <BarChart data={securityPercentages} />
-        </div>
-        {/* <RoundedImageContainer>
-          <WordlBitcoin src={circuloBt} alt="Imagen Redonda" />
-      </RoundedImageContainer> */}
+        <ContainerChart>
+          <TitleChart>Cryptocurrency Exchange Security Index: Assessment of Leading Platforms</TitleChart>
+          <ContainerHr/>
+          <SubTitleChart>An In-Depth Analysis of Cryptocurrency Exchange Security: Navigating the Landscape of Leading Platforms for Informed Investment Decisions."</SubTitleChart>
+          <BarChart data={securityPercentages} />
+          {/* <RoundedImageContainer>
+            <WordlBitcoin src={circuloBt} alt="Imagen Redonda" />
+          </RoundedImageContainer> */}
+        </ContainerChart>
+        
       </div>
     </div>
   );

@@ -38,7 +38,7 @@ const BarChart = ({ data }) => {
               'rgba(153, 102, 255, 1)',
             ],
             borderWidth: 1,
-            barThickness: 32, // Ajusta el ancho de las barras
+            barThickness: 42, // Ajusta el ancho de las barras
           }],
         },
         options: {
@@ -61,7 +61,7 @@ const BarChart = ({ data }) => {
     };
   }, [data]);
 
-  return <canvas ref={chartRef} style={{ maxWidth: '700px', maxHeight: '160%', marginLeft: '5%' }} />;
+  return <canvas ref={chartRef} style={{ maxWidth: '700px', maxHeight: '65%', marginLeft: '5%' }} />;
 };
 
 export default BarChart;
