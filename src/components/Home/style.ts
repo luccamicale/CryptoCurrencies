@@ -73,7 +73,7 @@ export const Boxgeneral = styled.div`
   margin-top: 72%;
   margin-left: 7%;
   box-shadow: 2px 2px 2px 2px;
-  opacity: 0.7;
+  opacity: 0.6;
 
   &:hover {
     background: linear-gradient(to bottom, #C31432, #240046);

@@ -63,7 +63,7 @@ function Home() {
           </Boxgeneral>
         </ContainerBoxsecure>
 
-        <GraficoInvest src={graficoinvest} alt="investment"></GraficoInvest>
+        
         
         {/* <RoundedImageContainer>
           <WordlBitcoin src={circuloBt} alt="Imagen Redonda" />
