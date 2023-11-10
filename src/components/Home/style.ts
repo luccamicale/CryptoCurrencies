@@ -74,6 +74,10 @@ export const Boxgeneral = styled.div`
   margin-left: 7%;
   box-shadow: 2px 2px 2px 2px;
   opacity: 0.7;
+
+  &:hover {
+    background: linear-gradient(to bottom, #C31432, #240046);
+  }
 `;
 
 export const ConatinerBoxIcon = styled.div`
