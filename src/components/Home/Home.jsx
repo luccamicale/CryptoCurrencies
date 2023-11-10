@@ -10,9 +10,13 @@ import '../../styles/styles.css'
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { TiTick } from "react-icons/ti";
 import Navbar from "../Navbar/Navbar";
+import BarChart from "../../Graphics/BarChart";
 
 
 function Home() {
+
+  const securityPercentages = [70, 48, 36, 20, 15];
+
   return (
     <div className="App">
       <div>
@@ -64,7 +68,10 @@ function Home() {
         </ContainerBoxsecure>
 
         
-        
+        <div style={{marginTop: '150px'}}>
+          {/* <h1>Porcentajes de Seguridad en Plataformas</h1> */}
+            <BarChart data={securityPercentages} />
+        </div>
         {/* <RoundedImageContainer>
           <WordlBitcoin src={circuloBt} alt="Imagen Redonda" />
       </RoundedImageContainer> */}
