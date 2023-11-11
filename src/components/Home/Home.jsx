@@ -1,10 +1,8 @@
 import React from "react";
 import phonebit from '../../imgs/phonebit.jpg'
 import iconBitcoin from '../../imgs/iconBitcoin.png'
-import circuloBt from '../../imgs/circuloBT.jpeg'
 import privacidad from '../../imgs/privacidad.png'
 import reembolso from '../../imgs/reembolso.png'
-import graficoinvest from '../../imgs/graficoinvest.jpeg'
 import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerHr, ContainerSectionOne, ContainerSectionTwo, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SmoothScrollLink, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
 import '../../styles/styles.css'
 import { FaArrowCircleDown } from 'react-icons/fa';
@@ -15,6 +13,7 @@ import BarChart from "../../Graphics/BarChart";
 
 function Home() {
 
+  
   const securityPercentages = [85, 68, 46, 30, 20];
 
   const handleSmoothScroll = (event) => {

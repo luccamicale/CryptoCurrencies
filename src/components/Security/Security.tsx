@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 
 
 function Security() {
+  
   return (
     <div>
       <Navbar />

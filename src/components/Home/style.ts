@@ -66,7 +66,7 @@ export const SecurePrivate = styled.div`
 export const SecureText = styled.p`
   font-size: 35px;
   color: whitesmoke;
-  font-family: 'Lora', serif;
+  font-family: Raleway,sans-serif;
 `;
 
 export const ContainerBoxsecure = styled.div`
@@ -127,10 +127,11 @@ export const ContainerChart = styled.div`
 
 export const TitleChart = styled.h2`
   margin-bottom: 50px;
-  font-family: 'Lora', serif;
+  font-family: Raleway,sans-serif;
   text-align: center;
   font-weight: 100;
   color: #c77dff;
+  font-size: 30px;
 `;
 
 export const SubTitleChart = styled.h3`
