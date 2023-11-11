@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerCryptosUl = styled.ul`
-  margin-top: 65px;
+  margin-top: 25px;
   border: 1px solid whitesmoke;
   background-color: #9d4edd;
   margin-left: 5%;
@@ -50,4 +50,28 @@ export const ContainerTitleCrypto = styled.h2`
   margin-top: 200px;
   font-size: 30px;
   font-family: Raleway,sans-serif;
+`;
+
+export const ContainerButtonFilter = styled.div`
+  gap: 20px;
+  margin-left: 5%;
+`;
+
+export const ButtonFilter = styled.button`
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 7px;
+  justify-content: space-between;
+  color: black;
+  margin-top: 20px;
+  margin-left: 10px;
+`;
+
+export const ContainerInput = styled.div`
+  
+`;
+
+export const ContainerMainInputButton = styled.div`
+  display: flex;
+  gap: 49%;
 `;
