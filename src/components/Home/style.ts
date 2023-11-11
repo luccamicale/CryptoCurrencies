@@ -124,7 +124,7 @@ export const TitleChart = styled.h2`
 `;
 
 export const SubTitleChart = styled.h3`
-  color: #ff8fab;
+  color: whitesmoke;
   margin-bottom: 50px;
   font-family: 'Lora', serif;
   text-align: center;
@@ -138,3 +138,48 @@ export const ContainerHr = styled.hr`
   font-weight: 100;
 `;
 
+export const ContainerSubChart = styled.div`
+  margin-left: 25%;
+`;
+
+export const ContainerContact = styled.div`
+  margin-top: 100px;
+  height: 350px;
+  opacity: 0.7;
+  margin-left: 5%;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+`;
+
+export const ContainerSectionOne = styled.div`
+background-color: #5a189a;
+width: 40%;
+display: flex;
+flex-direction: column;
+border-radius: 10px 10px 10px 10px;
+`;
+
+export const ContainerSectionTwo = styled.div`
+  background-color: #f2e9e4;
+  width: 60%;
+  border-radius: 10px 10px 10px 10px;
+`;
+
+export const TitleContact = styled.h2`
+  font-family: 'Lora', serif;
+  font-size: 27px;
+  text-align: left;
+  padding: 6%;
+  color: #ffe5ec;
+`;
+
+export const Input = styled.input`
+  
+`;
+
+export const ContactInfo = styled.span`
+  color: whitesmoke;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-left: 5%;
+`;

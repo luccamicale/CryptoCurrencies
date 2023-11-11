@@ -48,6 +48,12 @@ const BarChart = ({ data }) => {
               beginAtZero: true,
               max: 100,
             },
+            y: {
+              ticks: {
+                color: '#80ffdb',
+                font: 'Lora' // Cambia el color de las etiquetas aquí
+              },
+            },
           },
         },
       });
@@ -61,7 +67,7 @@ const BarChart = ({ data }) => {
     };
   }, [data]);
 
-  return <canvas ref={chartRef} style={{ maxWidth: '700px', maxHeight: '65%', marginLeft: '5%' }} />;
+  return <canvas ref={chartRef} style={{ maxWidth: '800px', maxHeight: '65%', marginLeft: '25%' }} />;
 };
 
 export default BarChart;

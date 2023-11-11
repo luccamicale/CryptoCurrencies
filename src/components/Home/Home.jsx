@@ -5,7 +5,7 @@ import circuloBt from '../../imgs/circuloBT.jpeg'
 import privacidad from '../../imgs/privacidad.png'
 import reembolso from '../../imgs/reembolso.png'
 import graficoinvest from '../../imgs/graficoinvest.jpeg'
-import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerHr, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SubTitleChart, TitleChart, WordlBitcoin } from "./style.ts";
+import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerHr, ContainerSectionOne, ContainerSectionTwo, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
 import '../../styles/styles.css'
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { TiTick } from "react-icons/ti";
@@ -71,12 +71,44 @@ function Home() {
         <ContainerChart>
           <TitleChart>Cryptocurrency Exchange Security Index: Assessment of Leading Platforms</TitleChart>
           <ContainerHr/>
-          <SubTitleChart>An In-Depth Analysis of Cryptocurrency Exchange Security: Navigating the Landscape of Leading Platforms for Informed Investment Decisions."</SubTitleChart>
+          <SubTitleChart>An In-Depth Analysis of Cryptocurrency Exchange Security: Navigating the Landscape of Leading Platforms for Informed Investment Decisions.</SubTitleChart>
           <BarChart data={securityPercentages} />
           {/* <RoundedImageContainer>
             <WordlBitcoin src={circuloBt} alt="Imagen Redonda" />
           </RoundedImageContainer> */}
         </ContainerChart>
+
+        <ContainerContact>
+          <ContainerSectionOne>
+            <TitleContact>HOW TO CONTACT US</TitleContact>
+            <ContactInfo>Crypto Security</ContactInfo>
+            <ContactInfo>+54 9 11587369</ContactInfo>
+            <ContactInfo>Buenos Aires, Argentina</ContactInfo>
+          </ContainerSectionOne>
+          <ContainerSectionTwo>
+              <form action="https://formspree.io/f/xknegzyn" method="POST" id="form">
+                  <ul className="ul-list">
+                    <li tabindex="0">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="user_name" required placeholder="Crypto Security" maxlength="30"/>
+                        <hr className="line-1"></hr>
+                    </li>
+                    <li tabindex="0">
+                        <label for="mail"></label>
+                        <input type="email" id="mail" name="user_email" required placeholder="cryptoSecurity@gmail.com"/>
+                        <hr className="line-1"></hr>
+                    </li>
+                    <li tabindex="0">
+                        <label for="mail"></label>
+                        <input type="email" id="mail" name="user_email"  placeholder="Write your message here"/>
+                        <hr className="line-1"></hr>
+                    </li>
+                   </ul>
+                    <button className="but-get" tabindex="0" type="submit" id="sub">Get in touch</button>
+                    <small id="mistake"></small>
+              </form>
+          </ContainerSectionTwo>
+        </ContainerContact>
         
       </div>
     </div>

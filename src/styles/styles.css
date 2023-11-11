@@ -5,3 +5,57 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.ul-list {
+  padding-top: 50px;
+}
+
+.ul-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ul-list li {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #f2e9e4;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-top: 20px;
+  background-color: #f2e9e4;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.but-get {
+  background-color: #353535;
+  color: white;
+  padding: 10px;
+  margin-left: 33%;
+  margin-bottom: 80px;
+}
+
