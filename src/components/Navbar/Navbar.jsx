@@ -1,14 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { ContainerNav, ContainerNavUL, ContainerUlLi, MainSection } from '../Navbar/style.ts';
+import { ContainerTitle } from "../Home/style.ts";
 
 
 function Navbar() {
   return (
-    <MainSection>
-      <ContainerNav>
+    
+      <div style={{display: 'flex'}}>
+        <ContainerTitle>CRYPTO SECURITY</ContainerTitle>
         <ContainerNavUL>
-          <ContainerUlLi>
+        <ContainerUlLi>
             <Link to="/"style={{textDecoration: 'none', color: 'violet'}}>INICIO</Link>
           </ContainerUlLi>
           <ContainerUlLi>
@@ -21,8 +23,8 @@ function Navbar() {
             <Link to="/contact"style={{textDecoration: 'none', color: 'violet'}}>CONTACT</Link>
           </ContainerUlLi>
         </ContainerNavUL>
-      </ContainerNav>
-    </MainSection>
+      </div>
+    
   );
 }
 

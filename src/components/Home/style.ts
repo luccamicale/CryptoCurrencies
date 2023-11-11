@@ -35,6 +35,8 @@ margin-left: 10%;
 margin-top: 60px;
 color: whitesmoke;
 font-weight: 100;
+width: auto;
+
 /* background: linear-gradient(to bottom, #C31432, #240046);
 border-radius: 16px; */
 `;

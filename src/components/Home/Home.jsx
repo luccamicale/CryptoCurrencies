@@ -37,7 +37,7 @@ function Home() {
       <div>
         <Background src={phonebit} alt="Back"/>
         <Navbar />
-        <ContainerTitle>CRYPTO SECURITY</ContainerTitle>
+        
         <SmoothScrollLink href="#Secure"onClick={handleSmoothScroll}>
           <ContainerArrowDown>
             <FaArrowCircleDown size={35} color="white"/>
