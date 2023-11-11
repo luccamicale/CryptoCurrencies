@@ -39,10 +39,18 @@ font-weight: 100;
 border-radius: 16px; */
 `;
 
-export const ContainerArrowDown = styled.div`
+export const ContainerArrowDown = styled.a`
   margin-left: 50%;
   margin-top: 43%;
   position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+`;
+
+// Agrega una transición suave al desplazamiento
+export const SmoothScrollLink = styled.a`
+  
 `;
 
 export const SecurePrivate = styled.div`

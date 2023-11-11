@@ -5,7 +5,7 @@ import circuloBt from '../../imgs/circuloBT.jpeg'
 import privacidad from '../../imgs/privacidad.png'
 import reembolso from '../../imgs/reembolso.png'
 import graficoinvest from '../../imgs/graficoinvest.jpeg'
-import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerHr, ContainerSectionOne, ContainerSectionTwo, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
+import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerHr, ContainerSectionOne, ContainerSectionTwo, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SmoothScrollLink, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
 import '../../styles/styles.css'
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { TiTick } from "react-icons/ti";
@@ -17,17 +17,34 @@ function Home() {
 
   const securityPercentages = [85, 68, 46, 30, 20];
 
+  const handleSmoothScroll = (event) => {
+    event.preventDefault();
+
+    const targetId = event.currentTarget.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offset = 800; // Ajusta este valor según sea necesario
+      window.scrollTo({
+        top: targetElement.offsetTop + offset, // Cambié a suma en lugar de resta
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className="App">
       <div>
         <Background src={phonebit} alt="Back"/>
         <Navbar />
         <ContainerTitle>CRYPTO SECURITY</ContainerTitle>
-        <ContainerArrowDown>
-          <FaArrowCircleDown size={35} color="white"/>
-        </ContainerArrowDown>
+        <SmoothScrollLink href="#Secure"onClick={handleSmoothScroll}>
+          <ContainerArrowDown>
+            <FaArrowCircleDown size={35} color="white"/>
+          </ContainerArrowDown>
+        </SmoothScrollLink>
         <SecurePrivate>
-          <SecureText>Secure & Private </SecureText>
+          <SecureText id="Secure">Secure & Private </SecureText>
           
         </SecurePrivate>
         
