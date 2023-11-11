@@ -18,9 +18,12 @@ export const ContainerNavUL = styled.ul`
   list-style-type: none;
   color: white;
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
 `;
 
 export const ContainerUlLi = styled.li`
+  color: violet;
+
 &:hover {
     background-color: white;
     color: black;
@@ -28,5 +31,6 @@ export const ContainerUlLi = styled.li`
     border-radius: 16px;
     padding-left: 10px;
     padding-right: 10px;
+    
   }
 `;
