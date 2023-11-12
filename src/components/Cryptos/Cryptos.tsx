@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import '../../styles/styles.css';
 import Navbar from "../Navbar/Navbar";
 import { ButtonFilter, ContainerButtonFilter, ContainerCryptosLi, ContainerCryptosUl, ContainerInput, ContainerMainInputButton, ContainerTitleCrypto } from "./style.ts";
+import CryptoChart from "../../Graphics/BitChart";
 
 function Crypto() {
   const [cryptoData, setCryptoData] = useState([]);
@@ -22,6 +23,7 @@ function Crypto() {
     <div>
       <Navbar />
       <ContainerTitleCrypto>Exploring the Cryptocurrency Universe: The Top 100</ContainerTitleCrypto>
+      <CryptoChart />
       <ContainerMainInputButton>
       <ContainerButtonFilter>
         <ButtonFilter onClick={() => handleFilter("price")}>Filter by Price</ButtonFilter>
