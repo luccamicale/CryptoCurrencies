@@ -21,7 +21,7 @@ const BarChart = ({ data }) => {
         data: {
           labels: ['Coinbase', 'Binance', 'Kraken', 'Gemini', 'Bitstamp'],
           datasets: [{
-            label: 'Seguridad (%)',
+            label: 'Security (%)',
             data: data,
             backgroundColor: [
               'rgba(75, 192, 192, 0.6)',

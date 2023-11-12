@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import Chart from 'chart.js/auto';
+import { ContainerBitcoinChart } from "../components/Cryptos/style.ts";
+
+// Declarar la variable fuera de la función del componente
+let bitcoinChart = null;
 
 function CryptoChart() {
   const [bitcoinPriceData, setBitcoinPriceData] = useState([]);
@@ -11,7 +15,7 @@ function CryptoChart() {
         const response = await axios.get('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart', {
           params: {
             vs_currency: 'usd',
-            days: '30',
+            days: '1',
           },
         });
 
@@ -32,18 +36,29 @@ function CryptoChart() {
     }
   }, [bitcoinPriceData]);
 
+  useEffect(() => {
+    // Limpia el gráfico cuando el componente se desmonta
+    return () => {
+      safelyCallDestroy();
+    };
+  }, []);
+
   const setupChart = () => {
     const ctx = document.getElementById('bitcoinChart').getContext('2d');
-    const prices = bitcoinPriceData.map(data => data[1]); // Extrae los precios
+    const prices = bitcoinPriceData.map(data => data[1]);
 
-    new Chart(ctx, {
+    // Destruir el gráfico existente si ya existe
+    safelyCallDestroy();
+
+    // Crear un nuevo gráfico y asignarlo a la variable global
+    bitcoinChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: prices.map((_, index) => index + 1), // Etiquetas para el eje X
+        labels: prices.map((_, index) => index + 1),
         datasets: [{
           label: 'Precio de Bitcoin (USD)',
           data: prices,
-          borderColor: 'rgba(75, 192, 192, 1)',
+          borderColor: '#c72cff',
           borderWidth: 1,
           fill: false,
         }],
@@ -59,11 +74,18 @@ function CryptoChart() {
     });
   };
 
+  const safelyCallDestroy = () => {
+    // Llamar a destroy solo si bitcoinChart es una instancia de Chart
+    if (bitcoinChart instanceof Chart) {
+      bitcoinChart.destroy();
+    }
+  };
+
   return (
-    <div style={{width: '55%',}}>
-      <h2>Gráfico de Variación del Precio de Bitcoin (Últimos 30 días)</h2>
+    <ContainerBitcoinChart>
+      <h2 style={{color: '#c72cff', fontFamily: 'Tajawal,sans-serif', fontWeight: '100'}}>The Most Important Crypto Currency: Bitcoin</h2>
       <canvas id="bitcoinChart" width="400" height="200"></canvas>
-    </div>
+    </ContainerBitcoinChart>
   );
 }
 
