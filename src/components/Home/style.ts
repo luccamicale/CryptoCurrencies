@@ -163,7 +163,7 @@ export const ContainerContact = styled.div`
 `;
 
 export const ContainerSectionOne = styled.div`
-background-color: #5a189a;
+background: linear-gradient(193.68deg, rgb(47, 48, 54) 0.68%, rgb(0, 0, 0) 100.48%);
 width: 40%;
 display: flex;
 flex-direction: column;

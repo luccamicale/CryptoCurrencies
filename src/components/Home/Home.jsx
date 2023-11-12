@@ -94,7 +94,7 @@ function Home() {
           </RoundedImageContainer> */}
         </ContainerChart>
 
-        <ContainerContact>
+        <ContainerContact id="Contact">
           <ContainerSectionOne>
             <TitleContact>HOW TO CONTACT US</TitleContact>
             <ContactInfo>Crypto Security</ContactInfo>

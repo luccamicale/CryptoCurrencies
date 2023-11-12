@@ -20,7 +20,7 @@ function Navbar() {
             <Link to="/cryptos"style={{textDecoration: 'none', color: 'violet'}}>CRYPTOS</Link>
           </ContainerUlLi>
           <ContainerUlLi>
-            <Link to="/contact"style={{textDecoration: 'none', color: 'violet'}}>CONTACT</Link>
+            <a href="#Contact" style={{textDecoration: 'none', color: 'violet'}}>CONTACT</a>
           </ContainerUlLi>
         </ContainerNavUL>
       </div>

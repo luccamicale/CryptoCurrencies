@@ -86,7 +86,7 @@ export const ContainerInput = styled.div`
 
 export const ContainerMainInputButton = styled.div`
   display: flex;
-  gap: 48%;
+  gap: 51%;
   margin-top: 50px;
 `;
 

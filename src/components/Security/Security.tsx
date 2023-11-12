@@ -8,6 +8,9 @@ function Security() {
   return (
     <div>
       <Navbar />
+      
+
+
     </div>
   );
 }
