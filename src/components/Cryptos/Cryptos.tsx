@@ -3,6 +3,8 @@ import '../../styles/styles.css';
 import Navbar from "../Navbar/Navbar";
 import { ButtonFilter, ContainerBoxCrypto, ContainerButtonFilter, ContainerButtonSeeMore, ContainerCryptosLi, ContainerCryptosUl, ContainerDivBoxes, ContainerDivCryptoChartBoxes, ContainerImgBitcoin, ContainerInput, ContainerMainInputButton, ContainerSeeMore, ContainerTitleCrypto, MainContainerBoxesCryptos, TextCryptoBox } from "./style.ts";
 import CryptoChart from "../../Graphics/BitChart";
+import { FaBitcoin } from 'react-icons/fa';
+import { SiBitcoin } from 'react-icons/si';
 
 
 function Crypto() {
@@ -32,6 +34,15 @@ function Crypto() {
       <ContainerDivCryptoChartBoxes>
         <CryptoChart />
         <MainContainerBoxesCryptos>
+        <ContainerBoxCrypto>
+          {cryptoData
+            .slice(0, 1) 
+            .map((asset, index) => (
+            <ContainerDivBoxes key={asset.id}>
+              <div style={{display: 'flex', justifyContent: 'center'}}><SiBitcoin size={50} color="#fca311"/></div>
+            </ContainerDivBoxes>
+          ))}
+        </ContainerBoxCrypto>
         <ContainerBoxCrypto>
           {cryptoData
             .slice(0, 1) 

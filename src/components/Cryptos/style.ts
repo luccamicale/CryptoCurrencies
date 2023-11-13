@@ -105,7 +105,7 @@ export const ContainerBoxCrypto = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 5%;
-  margin-top: 20px;
+  margin-top: -2px;
 `;
 
 export const ContainerDivBoxes = styled.div`
@@ -116,7 +116,7 @@ export const ContainerDivBoxes = styled.div`
   width: auto;
   height: auto;
   border: 1px solid #252422;
-  padding: 35px;
+  padding: 30px;
   /* box-shadow: 2px 2px 2px 2px; */
   opacity: 0.8;
   background-color: #353535;
