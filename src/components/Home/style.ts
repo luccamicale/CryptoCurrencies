@@ -101,10 +101,11 @@ export const ConatinerBoxIcon = styled.div`
 
 export const ConatinerBoxTitle = styled.span`
   color: whitesmoke;
-  font-size: 20px;
+  font-size: 23px;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
 `;
 
 export const ConatinerBoxText = styled.span`

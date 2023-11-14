@@ -32,6 +32,7 @@ export const ContainerButtonSecurity = styled.button`
   width: 20%;
   margin-top: 25px;
   font-family: 'Poppins', sans-serif;
+  border: 1px solid violet;
 `;
 
 export const ContainerMinBoxSecurity = styled.div`

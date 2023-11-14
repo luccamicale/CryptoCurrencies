@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
-const BarChart = ({ data }) => {
+const DonutChart = ({ data }) => {
   const chartRef = useRef();
 
   useEffect(() => {
@@ -10,56 +10,53 @@ const BarChart = ({ data }) => {
     if (chartRef.current) {
       const ctx = chartRef.current.getContext('2d');
 
-      // Destruir el gráfico anterior si existe
       if (myChart) {
         myChart.destroy();
       }
 
-      // Crear un nuevo gráfico con barras horizontales
       myChart = new Chart(ctx, {
-        type: 'bar',
+        type: 'doughnut',
         data: {
           labels: ['Coinbase', 'Binance', 'Kraken', 'Gemini', 'Bitstamp'],
           datasets: [{
-            label: 'Security (%)',
             data: data,
             backgroundColor: [
-              'rgba(75, 192, 192, 0.6)',
-              'rgba(255, 99, 132, 0.6)',
-              'rgba(255, 205, 86, 0.6)',
-              'rgba(54, 162, 235, 0.6)',
-              'rgba(153, 102, 255, 0.6)',
+              '#FFD700', // Amarillo dorado
+              '#FFB6C1', // Rosa claro
+              '#98FB98', // Verde menta
+              '#87CEEB', // Azul cielo
+              '#FFA07A', // Salmón claro
             ],
             borderColor: [
-              'rgba(75, 192, 192, 1)',
-              'rgba(255, 99, 132, 1)',
-              'rgba(255, 205, 86, 1)',
-              'rgba(54, 162, 235, 1)',
-              'rgba(153, 102, 255, 1)',
+              '#FFD700',
+              '#FFB6C1',
+              '#98FB98',
+              '#87CEEB',
+              '#FFA07A',
             ],
             borderWidth: 1,
-            barThickness: 42, // Ajusta el ancho de las barras
           }],
         },
         options: {
-          indexAxis: 'y', // Indica que el eje x debe ser horizontal
-          scales: {
-            x: {
-              beginAtZero: true,
-              max: 100,
+          aspectRatio: 1,
+          plugins: {
+            legend: {
+              display: true,
+              position: 'right',
             },
-            y: {
-              ticks: {
-                color: '#80ffdb',
-                font: 'Lora' // Cambia el color de las etiquetas aquí
+            title: {
+              display: true,
+              text: 'Secure Platforms',
+              font: {
+                size: 20,
               },
+              padding: 20,
             },
           },
         },
       });
     }
 
-    // Limpiar y destruir el gráfico al desmontar el componente
     return () => {
       if (myChart) {
         myChart.destroy();
@@ -67,7 +64,7 @@ const BarChart = ({ data }) => {
     };
   }, [data]);
 
-  return <canvas ref={chartRef} style={{ maxWidth: '800px', maxHeight: '65%', marginLeft: '25%' }} />;
+  return <canvas ref={chartRef} style={{ maxWidth: '800px', maxHeight: '65%', marginLeft: '15%' }} />;
 };
 
-export default BarChart;
+export default DonutChart;

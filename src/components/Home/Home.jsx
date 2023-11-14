@@ -50,7 +50,7 @@ function Home() {
         <ContainerBoxsecure>
           <Boxgeneral>
             <ConatinerBoxIcon><img src={iconBitcoin} alt="Bitcoin" style={{width: '65px'}}></img></ConatinerBoxIcon>
-            <ConatinerBoxTitle>Invest in Crypto</ConatinerBoxTitle>
+            <div style={{marginTop: '10px'}}><ConatinerBoxTitle>Invest in Crypto</ConatinerBoxTitle></div>
             <ConatinerBoxText>
               <ContainerIconSecurePrivate>
                 <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
@@ -70,7 +70,7 @@ function Home() {
           </Boxgeneral>
           <Boxgeneral>
             <ConatinerBoxIcon><img src={reembolso} alt="Bitcoin" style={{width: '75px'}}></img></ConatinerBoxIcon>
-            <ConatinerBoxTitle>Fast Transaction</ConatinerBoxTitle>
+            <div style={{marginTop: '2px', textAlign: 'center'}}><ConatinerBoxTitle>Fast Transaction</ConatinerBoxTitle></div>
             <ConatinerBoxText>
               <ContainerIconSecurePrivate>
                 <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
@@ -90,7 +90,7 @@ function Home() {
           </Boxgeneral>
           <Boxgeneral>
             <ConatinerBoxIcon><img src={privacidad} alt="Bitcoin" style={{width: '60px'}}></img></ConatinerBoxIcon>
-            <ConatinerBoxTitle>Secure</ConatinerBoxTitle>
+            <div style={{marginTop: '10px', textAlign: 'center'}}><ConatinerBoxTitle>Secure</ConatinerBoxTitle></div>
             <ConatinerBoxText>
             <ContainerIconSecurePrivate>
                 <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
