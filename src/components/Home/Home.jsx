@@ -3,7 +3,7 @@ import phonebit from '../../imgs/phonebit.jpg'
 import iconBitcoin from '../../imgs/iconBitcoin.png'
 import privacidad from '../../imgs/privacidad.png'
 import reembolso from '../../imgs/reembolso.png'
-import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerHr, ContainerIconSecurePrivate, ContainerSectionOne, ContainerSectionTwo, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SmoothScrollLink, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
+import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerDivTick, ContainerHr, ContainerIconSecurePrivate, ContainerSectionOne, ContainerSectionTwo, ContainerSecureSubText, ContainerTextTick, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SmoothScrollLink, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
 import '../../styles/styles.css'
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { TiTick } from "react-icons/ti";
@@ -53,18 +53,18 @@ function Home() {
             <div style={{marginTop: '10px'}}><ConatinerBoxTitle>Invest in Crypto</ConatinerBoxTitle></div>
             <ConatinerBoxText>
               <ContainerIconSecurePrivate>
-                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
-                <p>Diversify your portfolio and build a strong financial future.</p>
+                <ContainerDivTick><TiTick size={25} /></ContainerDivTick>
+                <ContainerTextTick>Diversify your portfolio and build a strong financial future.</ContainerTextTick>
               </ContainerIconSecurePrivate>
               <br/>
               <ContainerIconSecurePrivate>
-                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
-                <p>Discover investment opportunities in the world of cryptocurrencies.</p>
+                <ContainerDivTick><TiTick size={25} /></ContainerDivTick>
+                <ContainerTextTick>Discover investment opportunities in the world of cryptocurrencies.</ContainerTextTick>
               </ContainerIconSecurePrivate>
               <br/>
               <ContainerIconSecurePrivate>
-                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
-                <p>Potential for growth and asset diversification.</p>
+                <ContainerDivTick><TiTick size={25} /></ContainerDivTick>
+                <ContainerTextTick>Potential for growth and asset diversification.</ContainerTextTick>
               </ContainerIconSecurePrivate>
             </ConatinerBoxText>
           </Boxgeneral>
@@ -73,38 +73,38 @@ function Home() {
             <div style={{marginTop: '2px', textAlign: 'center'}}><ConatinerBoxTitle>Fast Transaction</ConatinerBoxTitle></div>
             <ConatinerBoxText>
               <ContainerIconSecurePrivate>
-                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
-                <p>Swift and efficient real-time transactions.</p>
+                <ContainerDivTick><TiTick size={25} /></ContainerDivTick>
+                <ContainerTextTick>Swift and efficient real-time transactions.</ContainerTextTick>
               </ContainerIconSecurePrivate>
               <br/>
               <ContainerIconSecurePrivate>
-                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
-                <p>Save time and money with the benefits of blockchain technology.</p>
+                <ContainerDivTick><TiTick size={25} /></ContainerDivTick>
+                <ContainerTextTick>Save time and money with the benefits of blockchain technology.</ContainerTextTick>
               </ContainerIconSecurePrivate>
               <br/>
               <ContainerIconSecurePrivate>
-                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
-                <p>Experience the speed of transactions without intermediaries.</p>
+                <ContainerDivTick><TiTick size={25} /></ContainerDivTick>
+                <ContainerTextTick>Experience the speed of transactions without intermediaries.</ContainerTextTick>
               </ContainerIconSecurePrivate>
             </ConatinerBoxText>
           </Boxgeneral>
           <Boxgeneral>
             <ConatinerBoxIcon><img src={privacidad} alt="Bitcoin" style={{width: '60px'}}></img></ConatinerBoxIcon>
-            <div style={{marginTop: '10px', textAlign: 'center'}}><ConatinerBoxTitle>Secure</ConatinerBoxTitle></div>
+            <div style={{marginTop: '12px', textAlign: 'center'}}><ConatinerBoxTitle>Secure</ConatinerBoxTitle></div>
             <ConatinerBoxText>
             <ContainerIconSecurePrivate>
-                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
-                <p>Maximum security to safeguard your digital assets</p>
+                <ContainerDivTick><TiTick size={25} /></ContainerDivTick>
+                <ContainerTextTick>Maximum security to safeguard your digital assets</ContainerTextTick>
               </ContainerIconSecurePrivate>
               <br/>
               <ContainerIconSecurePrivate>
-                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
-                <p>Take control of your funds with secure wallets and 2FA</p>
+                <ContainerDivTick><TiTick size={25} /></ContainerDivTick>
+                <ContainerTextTick>Take control of your funds with secure wallets and 2FA</ContainerTextTick>
               </ContainerIconSecurePrivate>
               <br/>
               <ContainerIconSecurePrivate>
-                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
-                <p>Secure transactions on the blockchain with privacy and transparency.</p>
+                <ContainerDivTick><TiTick size={25} /></ContainerDivTick>
+                <ContainerTextTick>Secure transactions on the blockchain with privacy and transparency.</ContainerTextTick>
               </ContainerIconSecurePrivate>
             </ConatinerBoxText>
           </Boxgeneral>

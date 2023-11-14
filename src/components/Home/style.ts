@@ -36,6 +36,8 @@ margin-top: 80px;
 color: whitesmoke;
 font-weight: 100;
 width: auto;
+text-decoration: none;
+
 
 /* background: linear-gradient(to bottom, #C31432, #240046);
 border-radius: 16px; */
@@ -76,16 +78,17 @@ export const ContainerBoxsecure = styled.div`
 export const Boxgeneral = styled.div`
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, #240046, #C31432); /* Agregar degradado de color */
+  background-color: #000814;
+  /* background: linear-gradient(to bottom, #240046, #C31432);  */
   width: 300px;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid violet;
   border-radius: 20px;
   padding: 35px;
   margin-top: 72%;
   margin-left: 7%;
-  box-shadow: 2px 2px 2px 2px;
-  opacity: 0.6;
+  box-shadow: 2px 2px 2px 2px violet;
+  /* opacity: 0.6; */
 
   /* &:hover {
     background: linear-gradient(to bottom, #C31432, #240046);
@@ -140,8 +143,8 @@ export const SubTitleChart = styled.h3`
   margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  font-weight: 100;
-  font-size: 15px;
+  font-weight: 300;
+  font-size: 18px;
   margin-top: 40px;
 `;
 
@@ -199,4 +202,12 @@ export const ContactInfo = styled.span`
 
 export const ContainerIconSecurePrivate = styled.div`
   display: flex;
+`;
+
+export const ContainerDivTick = styled.div`
+  
+`;
+
+export const ContainerTextTick = styled.div`
+
 `;

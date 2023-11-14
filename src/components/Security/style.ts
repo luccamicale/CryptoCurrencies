@@ -33,6 +33,8 @@ export const ContainerButtonSecurity = styled.button`
   margin-top: 25px;
   font-family: 'Poppins', sans-serif;
   border: 1px solid violet;
+  background-color: violet;
+  border-radius: 20px;
 `;
 
 export const ContainerMinBoxSecurity = styled.div`
@@ -41,20 +43,30 @@ export const ContainerMinBoxSecurity = styled.div`
   margin-left: 5%;
   margin-top: 65px;
 `;
-export const ContainerDivMinBox = styled.div`
+export const ContainerDivMinBox = styled.button`
   border: 1px solid rgb(72, 12, 168);
   width: 100%;
-  height: 20px;
+  background-color: #11151c;
   padding: 10px;
   text-align: center;
   color: violet;
   font-family: 'Poppins', sans-serif;
+
+  &:hover {
+    background-color: violet;
+    color: black;
+  }
+`;
+
+export const ContainerAButtonPlat = styled.a`
+  width: 35%;
 `;
 
 export const ContainerIntroSecurity = styled.div`
   display: flex;
   justify-content: center;
   margin-left: 4%;
+  
 `;
 
 export const ContainerIntroSpanSec = styled.span`
@@ -118,4 +130,14 @@ export const ContainerTips = styled.h3`
   text-align: center;
   margin-top: 80px;
   margin-bottom: -50px;
+`;
+
+export const ContainerSpanTips = styled.span`
+  
+`;
+
+export const ContainerDivIconTips = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
 `;

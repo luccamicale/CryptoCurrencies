@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
-const DonutChart = ({ data }) => {
+const BarChart = ({ data }) => {
   const chartRef = useRef();
 
   useEffect(() => {
@@ -10,53 +10,56 @@ const DonutChart = ({ data }) => {
     if (chartRef.current) {
       const ctx = chartRef.current.getContext('2d');
 
+      
       if (myChart) {
         myChart.destroy();
       }
 
+      // Crear un nuevo gráfico con barras horizontales
       myChart = new Chart(ctx, {
-        type: 'doughnut',
+        type: 'bar',
         data: {
           labels: ['Coinbase', 'Binance', 'Kraken', 'Gemini', 'Bitstamp'],
           datasets: [{
+            label: 'Security (%)',
             data: data,
             backgroundColor: [
-              '#FFD700', // Amarillo dorado
-              '#FFB6C1', // Rosa claro
-              '#98FB98', // Verde menta
-              '#87CEEB', // Azul cielo
-              '#FFA07A', // Salmón claro
+              'rgba(75, 192, 192, 0.9)',
+              'rgba(255, 99, 132, 0.9)',
+              'rgba(255, 205, 86, 0.9)',
+              'rgba(54, 162, 235, 0.9)',
+              'rgba(153, 102, 255, 0.9)',
             ],
             borderColor: [
-              '#FFD700',
-              '#FFB6C1',
-              '#98FB98',
-              '#87CEEB',
-              '#FFA07A',
+              'rgba(75, 192, 192, 1)',
+              'rgba(255, 99, 132, 1)',
+              'rgba(255, 205, 86, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(153, 102, 255, 1)',
             ],
             borderWidth: 1,
+            barThickness: 42, 
           }],
         },
         options: {
-          aspectRatio: 1,
-          plugins: {
-            legend: {
-              display: true,
-              position: 'right',
+          indexAxis: 'y',
+          scales: {
+            x: {
+              beginAtZero: true,
+              max: 100,
             },
-            title: {
-              display: true,
-              text: 'Secure Platforms',
-              font: {
-                size: 20,
+            y: {
+              ticks: {
+                color: '#80ffdb',
+                font: 'Lora'
               },
-              padding: 20,
             },
           },
         },
       });
     }
 
+    
     return () => {
       if (myChart) {
         myChart.destroy();
@@ -64,7 +67,7 @@ const DonutChart = ({ data }) => {
     };
   }, [data]);
 
-  return <canvas ref={chartRef} style={{ maxWidth: '800px', maxHeight: '65%', marginLeft: '15%' }} />;
+  return <canvas ref={chartRef} style={{ maxWidth: '800px', maxHeight: '65%', marginLeft: '25%' }} />;
 };
 
-export default DonutChart;
+export default BarChart;

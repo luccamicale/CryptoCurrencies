@@ -8,16 +8,15 @@ function Navbar() {
   return (
     
       <ContainerMainNavbar>
-        <ContainerTitle>CRYPTO SECURITY</ContainerTitle>
+        <ContainerTitle>
+          <Link to="/" style={{textDecoration: 'none', color: 'whitesmoke'}}>CRYPTO SECURITY</Link>
+        </ContainerTitle>
         <ContainerNavUL>
-        <ContainerUlLi>
-            <Link to="/"style={{textDecoration: 'none', color: 'violet'}}>INICIO</Link>
+          <ContainerUlLi>
+            <Link to="/cryptos"style={{textDecoration: 'none', color: 'violet'}}>CRYPTOS</Link>
           </ContainerUlLi>
           <ContainerUlLi>
             <Link to="/security" style={{textDecoration: 'none', color: 'violet'}}>SECURITY</Link>
-          </ContainerUlLi>
-          <ContainerUlLi>
-            <Link to="/cryptos"style={{textDecoration: 'none', color: 'violet'}}>CRYPTOS</Link>
           </ContainerUlLi>
           <ContainerUlLi>
             <a href="#Contact" style={{textDecoration: 'none', color: 'violet'}}>CONTACT</a>
