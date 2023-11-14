@@ -5,6 +5,7 @@ import { ButtonFilter, ContainerBoxCrypto, ContainerButtonFilter, ContainerButto
 import CryptoChart from "../../Graphics/BitChart";
 import { FaBitcoin } from 'react-icons/fa';
 import { SiBitcoin } from 'react-icons/si';
+import Contact from "../Contact/Contact.tsx";
 
 
 function Crypto() {
@@ -32,7 +33,7 @@ function Crypto() {
       <Navbar />
       <ContainerTitleCrypto>Exploring the Cryptocurrency Universe: The Top 100</ContainerTitleCrypto>
       <ContainerDivCryptoChartBoxes>
-        <CryptoChart />
+      <CryptoChart />
         <MainContainerBoxesCryptos>
         <ContainerBoxCrypto>
           {cryptoData
@@ -128,6 +129,8 @@ function Crypto() {
           <ContainerButtonSeeMore onClick={handleSeeMore}>See More</ContainerButtonSeeMore>
         </ContainerSeeMore>
       )}
+
+      <Contact />
 
     </div>
   );

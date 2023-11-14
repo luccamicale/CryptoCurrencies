@@ -2,7 +2,7 @@ import React from "react";
 import '../../styles/styles.css'
 import Navbar from "../Navbar/Navbar";
 import '../Security/style.ts'
-import { ContainerGeneralSecurity, ContainerIconSecurity, ContainerOneCard, ContainerSecurityOne, ContainerSecurityTwo, ContainerSpanSecurity, ContainerSpanSecurityTwo, ContainerTitleSecurity } from "../Security/style.ts";
+import { ContainerButtonSecurity, ContainerDivMinBox, ContainerGeneralSecurity, ContainerIconSecurity, ContainerIntroSecurity, ContainerIntroSpanSec, ContainerMinBoxSecurity, ContainerOneCard, ContainerSecurityOne, ContainerSecurityTwo, ContainerSpanSecurity, ContainerSpanSecurityTwo, ContainerSubTitleSecurity, ContainerTextRisk, ContainerTips, ContainerTitleIntroSec, ContainerTitleRisk, ContainerTitleSecurity, MainContainerRisk, MainContainerSubandTitle, MainContainerThread, MainContainerThreadRisk } from "../Security/style.ts";
 import { MdOutlineSecurity } from 'react-icons/md';
 import { CgDanger } from 'react-icons/cg';
 import { AiOutlineTransaction } from 'react-icons/ai';
@@ -10,85 +10,88 @@ import { TiCloudStorage } from 'react-icons/ti';
 import { MdSell } from 'react-icons/md';
 import { AiOutlineLink } from 'react-icons/ai';
 import { GiOpenTreasureChest } from 'react-icons/gi';
-import Accordion from 'react-bootstrap/Accordion';
+import { SiCardano } from 'react-icons/si';
+import Contact from "../Contact/Contact.tsx";
 
 function Security() {
   
   return (
     <div>
       <Navbar />
-      <div style={{display: 'flex', justifyContent: 'center', gap: '50px', marginTop: '100px'}}>
-        <ContainerTitleSecurity>Protecting your digital treasure: security in the cryptocurrency universe</ContainerTitleSecurity>
-        <div style={{marginTop: '85px'}}><GiOpenTreasureChest size={200} color="#fca311"/></div>
+      <div style={{display: 'flex', flexDirection: 'row', gap: '50px', marginTop: '100px'}}>
+        <MainContainerSubandTitle>
+          <ContainerTitleSecurity>Protecting your digital treasure: security in the cryptocurrency universe</ContainerTitleSecurity>
+          <ContainerSubTitleSecurity> This journey unveils strategies to fortify your assets, from encryption protocols to blockchain intricacies. Navigate the digital finance landscape with confidence and safeguard your holdings in this dynamic realm."</ContainerSubTitleSecurity>
+          <ContainerButtonSecurity>Go to Coinbase</ContainerButtonSecurity>
+        </MainContainerSubandTitle>
+        <div style={{display: ' flex', marginRight: '200px', marginTop: '110px'}}><SiCardano size={230} color="#480ca8"/></div>
       </div>
-      <ContainerGeneralSecurity>
 
-        <ContainerSecurityOne>
-          <ContainerIconSecurity>
-            <MdOutlineSecurity size={90} color="white" />
-          </ContainerIconSecurity>
-          <ContainerSpanSecurity>
-            1. Introducción a las Criptomonedas:
-            Definición: Explica qué son las criptomonedas y cómo funcionan.
-            Tecnología Blockchain: Descripción básica de la tecnología detrás de las criptomonedas y su papel en la seguridad.
-          </ContainerSpanSecurity> 
-        </ContainerSecurityOne>
-          
-        <ContainerSecurityTwo>
-          <ContainerSpanSecurityTwo>
-          1. Introducción a las Criptomonedas:
-            Definición: Explica qué son las criptomonedas y cómo funcionan.
-            Tecnología Blockchain: Descripción básica de la tecnología detrás de las criptomonedas y su papel en la seguridad.
-          </ContainerSpanSecurityTwo>
-          <ContainerIconSecurity>
-            <CgDanger size={90} color="white" />
-          </ContainerIconSecurity>
-        </ContainerSecurityTwo>
+      <ContainerMinBoxSecurity>
+        <ContainerDivMinBox>Binance</ContainerDivMinBox>
+        <ContainerDivMinBox>kraken</ContainerDivMinBox>
+        <ContainerDivMinBox>Gemini</ContainerDivMinBox>
+      </ContainerMinBoxSecurity>
+      
+      <ContainerIntroSecurity>
+        <ContainerIntroSpanSec>
+          <ContainerTitleIntroSec>Introduction</ContainerTitleIntroSec>
+          <span>"Explore the intricate world of cryptocurrency security in 'Protecting your digital treasure.' This in-depth journey unveils strategies to fortify your assets, 
+            from encryption protocols to blockchain intricacies.
+            Navigate the digital finance landscape with confidence and safeguard your holdings in this dynamic realm."
+          </span>
+        </ContainerIntroSpanSec>
+      </ContainerIntroSecurity>
+        
+      <MainContainerThreadRisk>
+        <MainContainerRisk>
+          <ContainerTitleRisk>Risk</ContainerTitleRisk>
+          <ContainerTextRisk>This journey unveils strategies to fortify your assets, from encryption protocols to
+            blockchain intricacies. Navigate the digital finance 
+            andscape with confidence and safeguard your holdings in this dynamic realm."
+          </ContainerTextRisk>
+        </MainContainerRisk>
 
-        <ContainerSecurityOne>
-          <ContainerIconSecurity>
-            <AiOutlineTransaction size={90} color="white" />
-          </ContainerIconSecurity>
-          <ContainerSpanSecurity>
-            1. Introducción a las Criptomonedas:
-            Definición: Explica qué son las criptomonedas y cómo funcionan.
-            Tecnología Blockchain: Descripción básica de la tecnología detrás de las criptomonedas y su papel en la seguridad.
-          </ContainerSpanSecurity> 
-        </ContainerSecurityOne>
+        <MainContainerThread>
+        <ContainerTitleRisk>Thread</ContainerTitleRisk>
+          <ContainerTextRisk>This journey unveils strategies to fortify your assets, from encryption protocols to
+            blockchain intricacies. Navigate the digital finance 
+            andscape with confidence and safeguard your holdings in this dynamic realm."
+          </ContainerTextRisk>
+        </MainContainerThread>
+      </MainContainerThreadRisk>
 
-        <ContainerSecurityTwo>
-          <ContainerSpanSecurityTwo>
-          1. Introducción a las Criptomonedas:
-            Definición: Explica qué son las criptomonedas y cómo funcionan.
-            Tecnología Blockchain: Descripción básica de la tecnología detrás de las criptomonedas y su papel en la seguridad.
-          </ContainerSpanSecurityTwo>
-          <ContainerIconSecurity>
-            <TiCloudStorage size={90} color="white" />
-          </ContainerIconSecurity>
-        </ContainerSecurityTwo>
+      <MainContainerThreadRisk>
+        <MainContainerRisk>
+          <ContainerTitleRisk>Risk</ContainerTitleRisk>
+          <ContainerTextRisk>This journey unveils strategies to fortify your assets, from encryption protocols to
+            blockchain intricacies. Navigate the digital finance 
+            andscape with confidence and safeguard your holdings in this dynamic realm."
+          </ContainerTextRisk>
+        </MainContainerRisk>
+        
+        <MainContainerThread>
+        <ContainerTitleRisk>Thread</ContainerTitleRisk>
+          <ContainerTextRisk>This journey unveils strategies to fortify your assets, from encryption protocols to
+            blockchain intricacies. Navigate the digital finance 
+            andscape with confidence and safeguard your holdings in this dynamic realm."
+          </ContainerTextRisk>
+        </MainContainerThread>
+      </MainContainerThreadRisk>
 
-        <ContainerSecurityOne>
-          <ContainerIconSecurity>
-            <MdSell size={90} color="white" />
-          </ContainerIconSecurity>
-          <ContainerSpanSecurity>
-            1. Introducción a las Criptomonedas:
-            Definición: Explica qué son las criptomonedas y cómo funcionan.
-            Tecnología Blockchain: Descripción básica de la tecnología detrás de las criptomonedas y su papel en la seguridad.
-          </ContainerSpanSecurity> 
-        </ContainerSecurityOne>
+      <ContainerTips>Tips for Trading Cryptocurrencies</ContainerTips>
 
-        <ContainerSecurityTwo>
-          <ContainerSpanSecurityTwo>
-          1. Introducción a las Criptomonedas:
-            Definición: Explica qué son las criptomonedas y cómo funcionan.
-            Tecnología Blockchain: Descripción básica de la tecnología detrás de las criptomonedas y su papel en la seguridad.
-          </ContainerSpanSecurityTwo>
-          <ContainerIconSecurity>
-            <AiOutlineLink size={90} color="white" />
-          </ContainerIconSecurity>
-        </ContainerSecurityTwo>
-      </ContainerGeneralSecurity>
+      <ContainerIntroSecurity>
+        <ContainerIntroSpanSec>
+          <ContainerTitleIntroSec>Tips</ContainerTitleIntroSec>
+          <span>"Explore the intricate world of cryptocurrency security in 'Protecting your digital treasure.' This in-depth journey unveils strategies to fortify your assets, 
+            from encryption protocols to blockchain intricacies.
+            Navigate the digital finance landscape with confidence and safeguard your holdings in this dynamic realm."
+          </span>
+        </ContainerIntroSpanSec>
+      </ContainerIntroSecurity>
+
+      <Contact />
 
     </div>
   );

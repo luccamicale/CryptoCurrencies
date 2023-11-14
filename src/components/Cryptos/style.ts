@@ -18,7 +18,8 @@ export const ContainerCryptosLi = styled.li`
   height: 35px;
   color: whitesmoke;
   width: 95%;
-  font-family: Raleway,sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   border-radius: 6px;
   margin-left: 2.3%;
   border: 1 px solid #353535;
@@ -55,11 +56,12 @@ export const ContainerCryptosLi = styled.li`
 `;
 
 export const ContainerTitleCrypto = styled.h2`
-  text-align: left;
+  text-align: center;
   color: #c77dff;
   margin-top: 170px;
-  font-size: 30px;
-  font-family: Raleway,sans-serif;
+  font-size: 34px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   margin-left: 5%;
 `;
 
@@ -77,7 +79,7 @@ export const ButtonFilter = styled.button`
   margin-top: 20px;
   margin-left: 10px;
   background-color: #8a817c;
-  font-family: Tajawal,sans-serif;
+  font-family: 'Poppins', sans-serif;
 `;
 
 export const ContainerInput = styled.div`
@@ -86,7 +88,7 @@ export const ContainerInput = styled.div`
 
 export const ContainerMainInputButton = styled.div`
   display: flex;
-  gap: 51%;
+  gap: 46%;
   margin-top: 50px;
 `;
 
@@ -99,6 +101,7 @@ export const ContainerButtonSeeMore = styled.button`
   margin-top: 20px;
   border-radius: 16px;
   color: #240046;
+  font-family: 'Poppins', sans-serif;
 `;
 
 export const ContainerBoxCrypto = styled.div`
@@ -130,6 +133,8 @@ export const ContainerDivBoxes = styled.div`
 
 export const ContainerDivCryptoChartBoxes = styled.div`
   display: flex;
+  justify-content: center;
+  margin-top: 55px;
 `;
 
 export const ContainerBitcoinChart = styled.div`

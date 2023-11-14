@@ -29,10 +29,10 @@ export const  WordlBitcoin= styled.img`
 
 export const ContainerTitle = styled.h2`
 font-size: 35px;
-font-family: 'Lora', serif;
+font-family: 'Chakra Petch', sans-serif;
 position: absolute;
 margin-left: 10%;
-margin-top: 60px;
+margin-top: 80px;
 color: whitesmoke;
 font-weight: 100;
 width: auto;
@@ -66,7 +66,7 @@ export const SecurePrivate = styled.div`
 export const SecureText = styled.p`
   font-size: 35px;
   color: whitesmoke;
-  font-family: Raleway,sans-serif;
+  font-family: 'Poppins', sans-serif;
 `;
 
 export const ContainerBoxsecure = styled.div`
@@ -80,16 +80,16 @@ export const Boxgeneral = styled.div`
   width: 300px;
   height: auto;
   border: 1px solid black;
-  border-radius: 6px;
+  border-radius: 20px;
   padding: 35px;
   margin-top: 72%;
   margin-left: 7%;
   box-shadow: 2px 2px 2px 2px;
   opacity: 0.6;
 
-  &:hover {
+  /* &:hover {
     background: linear-gradient(to bottom, #C31432, #240046);
-  }
+  } */
 `;
 
 export const ConatinerBoxIcon = styled.div`
@@ -127,17 +127,17 @@ export const ContainerChart = styled.div`
 
 export const TitleChart = styled.h2`
   margin-bottom: 50px;
-  font-family: Raleway,sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
-  font-weight: 100;
-  color: #c77dff;
+  font-weight: 300;
+  color: #80ffdb;
   font-size: 30px;
 `;
 
 export const SubTitleChart = styled.h3`
   color: whitesmoke;
   margin-bottom: 50px;
-  font-family: 'Lora', serif;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   font-weight: 100;
   font-size: 15px;
@@ -155,32 +155,31 @@ export const ContainerSubChart = styled.div`
 
 export const ContainerContact = styled.div`
   margin-top: 100px;
-  height: 350px;
-  opacity: 0.7;
-  margin-left: 5%;
-  border-radius: 10px 10px 10px 10px;
+  height: auto;
+  width: 105.2%;
   display: flex;
 `;
 
 export const ContainerSectionOne = styled.div`
-background: linear-gradient(193.68deg, rgb(47, 48, 54) 0.68%, rgb(0, 0, 0) 100.48%);
+background: linear-gradient(193.68deg, rgb(47, 48, 54) 0.68%, rgb(0, 0, 0) 100%);
 width: 40%;
 display: flex;
 flex-direction: column;
-border-radius: 10px 10px 10px 10px;
+align-items: center;
+/* border-radius: 10px 10px 10px 10px; */
 `;
 
 export const ContainerSectionTwo = styled.div`
   background-color: #f2e9e4;
   width: 60%;
-  border-radius: 10px 10px 10px 10px;
+  /* border-radius: 10px 10px 10px 10px; */
 `;
 
 export const TitleContact = styled.h2`
-  font-family: 'Lora', serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 27px;
   text-align: left;
-  padding: 6%;
+  padding: 7%;
   color: #ffe5ec;
 `;
 
@@ -192,5 +191,11 @@ export const ContactInfo = styled.span`
   color: whitesmoke;
   font-size: 18px;
   margin-top: 25px;
-  margin-left: 5%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  /* margin-left: 10%; */
+`;
+
+export const ContainerIconSecurePrivate = styled.div`
+  display: flex;
 `;

@@ -3,12 +3,13 @@ import phonebit from '../../imgs/phonebit.jpg'
 import iconBitcoin from '../../imgs/iconBitcoin.png'
 import privacidad from '../../imgs/privacidad.png'
 import reembolso from '../../imgs/reembolso.png'
-import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerHr, ContainerSectionOne, ContainerSectionTwo, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SmoothScrollLink, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
+import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerHr, ContainerIconSecurePrivate, ContainerSectionOne, ContainerSectionTwo, ContainerSecureSubText, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SmoothScrollLink, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
 import '../../styles/styles.css'
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { TiTick } from "react-icons/ti";
 import Navbar from "../Navbar/Navbar";
 import BarChart from "../../Graphics/BarChart";
+import Contact from "../Contact/Contact.tsx";
 
 
 function Home() {
@@ -44,7 +45,6 @@ function Home() {
         </SmoothScrollLink>
         <SecurePrivate>
           <SecureText id="Secure">Secure & Private </SecureText>
-          
         </SecurePrivate>
         
         <ContainerBoxsecure>
@@ -52,33 +52,60 @@ function Home() {
             <ConatinerBoxIcon><img src={iconBitcoin} alt="Bitcoin" style={{width: '65px'}}></img></ConatinerBoxIcon>
             <ConatinerBoxTitle>Invest in Crypto</ConatinerBoxTitle>
             <ConatinerBoxText>
-              <div><TiTick size={25} />Diversify your portfolio and build a strong financial future.</div>
+              <ContainerIconSecurePrivate>
+                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
+                <p>Diversify your portfolio and build a strong financial future.</p>
+              </ContainerIconSecurePrivate>
               <br/>
-              <div><TiTick size={25} />Discover investment opportunities in the world of cryptocurrencies.</div>
+              <ContainerIconSecurePrivate>
+                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
+                <p>Discover investment opportunities in the world of cryptocurrencies.</p>
+              </ContainerIconSecurePrivate>
               <br/>
-              <div><TiTick size={25} />Potential for growth and asset diversification.</div>
+              <ContainerIconSecurePrivate>
+                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
+                <p>Potential for growth and asset diversification.</p>
+              </ContainerIconSecurePrivate>
             </ConatinerBoxText>
           </Boxgeneral>
           <Boxgeneral>
             <ConatinerBoxIcon><img src={reembolso} alt="Bitcoin" style={{width: '75px'}}></img></ConatinerBoxIcon>
             <ConatinerBoxTitle>Fast Transaction</ConatinerBoxTitle>
             <ConatinerBoxText>
-              <div><TiTick size={25} />Swift and efficient real-time transactions.</div>
+              <ContainerIconSecurePrivate>
+                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
+                <p>Swift and efficient real-time transactions.</p>
+              </ContainerIconSecurePrivate>
               <br/>
-              <div><TiTick size={25} />Save time and money with the benefits of blockchain technology.</div>
+              <ContainerIconSecurePrivate>
+                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
+                <p>Save time and money with the benefits of blockchain technology.</p>
+              </ContainerIconSecurePrivate>
               <br/>
-              <div><TiTick size={25} />Experience the speed of transactions without intermediaries.</div>
+              <ContainerIconSecurePrivate>
+                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
+                <p>Experience the speed of transactions without intermediaries.</p>
+              </ContainerIconSecurePrivate>
             </ConatinerBoxText>
           </Boxgeneral>
           <Boxgeneral>
             <ConatinerBoxIcon><img src={privacidad} alt="Bitcoin" style={{width: '60px'}}></img></ConatinerBoxIcon>
             <ConatinerBoxTitle>Secure</ConatinerBoxTitle>
             <ConatinerBoxText>
-              <div><TiTick size={25} />Maximum security to safeguard your digital assets.</div>
+            <ContainerIconSecurePrivate>
+                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
+                <p>Maximum security to safeguard your digital assets</p>
+              </ContainerIconSecurePrivate>
               <br/>
-              <div><TiTick size={25} />Take control of your funds with secure wallets and 2FA</div>
+              <ContainerIconSecurePrivate>
+                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
+                <p>Take control of your funds with secure wallets and 2FA</p>
+              </ContainerIconSecurePrivate>
               <br/>
-              <div><TiTick size={25} />Secure transactions on the blockchain with privacy and transparency.</div>
+              <ContainerIconSecurePrivate>
+                <div style={{marginTop: '10px'}}><TiTick size={25} /></div>
+                <p>Secure transactions on the blockchain with privacy and transparency.</p>
+              </ContainerIconSecurePrivate>
             </ConatinerBoxText>
           </Boxgeneral>
         </ContainerBoxsecure>
@@ -94,37 +121,7 @@ function Home() {
           </RoundedImageContainer> */}
         </ContainerChart>
 
-        <ContainerContact id="Contact">
-          <ContainerSectionOne>
-            <TitleContact>HOW TO CONTACT US</TitleContact>
-            <ContactInfo>Crypto Security</ContactInfo>
-            <ContactInfo>+54 9 11587369</ContactInfo>
-            <ContactInfo>Buenos Aires, Argentina</ContactInfo>
-          </ContainerSectionOne>
-          <ContainerSectionTwo>
-              <form action="https://formspree.io/f/xknegzyn" method="POST" id="form">
-                  <ul className="ul-list">
-                    <li tabindex="0">
-                        <label for="name"></label>
-                        <input type="text" id="name" name="user_name" required placeholder="Crypto Security" maxlength="30"/>
-                        <hr className="line-1"></hr>
-                    </li>
-                    <li tabindex="0">
-                        <label for="mail"></label>
-                        <input type="email" id="mail" name="user_email" required placeholder="cryptoSecurity@gmail.com"/>
-                        <hr className="line-1"></hr>
-                    </li>
-                    <li tabindex="0">
-                        <label for="mail"></label>
-                        <input type="email" id="mail" name="user_email"  placeholder="Write your message here"/>
-                        <hr className="line-1"></hr>
-                    </li>
-                   </ul>
-                    <button className="but-get" tabindex="0" type="submit" id="sub">Get in touch</button>
-                    <small id="mistake"></small>
-              </form>
-          </ContainerSectionTwo>
-        </ContainerContact>
+        <Contact />
         
       </div>
     </div>

@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { ContainerNav, ContainerNavUL, ContainerUlLi, MainSection } from '../Navbar/style.ts';
+import { ContainerMainNavbar, ContainerNav, ContainerNavUL, ContainerUlLi, MainSection } from '../Navbar/style.ts';
 import { ContainerTitle } from "../Home/style.ts";
 
 
 function Navbar() {
   return (
     
-      <div style={{display: 'flex'}}>
+      <ContainerMainNavbar>
         <ContainerTitle>CRYPTO SECURITY</ContainerTitle>
         <ContainerNavUL>
         <ContainerUlLi>
@@ -23,7 +23,7 @@ function Navbar() {
             <a href="#Contact" style={{textDecoration: 'none', color: 'violet'}}>CONTACT</a>
           </ContainerUlLi>
         </ContainerNavUL>
-      </div>
+      </ContainerMainNavbar>
     
   );
 }
