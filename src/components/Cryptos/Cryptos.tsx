@@ -35,7 +35,7 @@ function Crypto() {
       <ContainerDivCryptoChartBoxes>
       <CryptoChart />
         <MainContainerBoxesCryptos>
-        <ContainerBoxCrypto>
+          <ContainerBoxCrypto>
           {cryptoData
             .slice(0, 1) 
             .map((asset, index) => (
@@ -43,8 +43,8 @@ function Crypto() {
               <div style={{display: 'flex', justifyContent: 'center'}}><SiBitcoin size={50} color="#fca311"/></div>
             </ContainerDivBoxes>
           ))}
-        </ContainerBoxCrypto>
-        <ContainerBoxCrypto>
+          </ContainerBoxCrypto>
+          <ContainerBoxCrypto>
           {cryptoData
             .slice(0, 1) 
             .map((asset, index) => (
@@ -52,8 +52,8 @@ function Crypto() {
               <TextCryptoBox>Price: USD{(Math.round(asset.priceUsd * 1000) / 1000).toLocaleString()}</TextCryptoBox>
             </ContainerDivBoxes>
           ))}
-        </ContainerBoxCrypto>
-        <ContainerBoxCrypto>
+          </ContainerBoxCrypto>
+          <ContainerBoxCrypto>
           {cryptoData
             .slice(0, 1)
             .map((asset, index) => (
@@ -61,16 +61,16 @@ function Crypto() {
               <TextCryptoBox>Supply: {(Math.round(asset.supply * 1000) / 1000).toLocaleString()} USD</TextCryptoBox>
             </ContainerDivBoxes>
           ))}
-        </ContainerBoxCrypto>
-        <ContainerBoxCrypto>
+          </ContainerBoxCrypto>
+          <ContainerBoxCrypto>
           {cryptoData
             .slice(0, 1)
             .map((asset, index) => (
             <ContainerDivBoxes key={asset.id}>
               <TextCryptoBox>Market Cap USD: {(Math.round(asset.marketCapUsd * 1000) / 1000).toLocaleString()}</TextCryptoBox>
-        </ContainerDivBoxes>
+          </ContainerDivBoxes>
           ))}
-      </ContainerBoxCrypto>
+          </ContainerBoxCrypto>
         </MainContainerBoxesCryptos>
       </ContainerDivCryptoChartBoxes>
       <ContainerMainInputButton>

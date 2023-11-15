@@ -3,13 +3,14 @@ import phonebit from '../../imgs/phonebit.jpg'
 import iconBitcoin from '../../imgs/iconBitcoin.png'
 import privacidad from '../../imgs/privacidad.png'
 import reembolso from '../../imgs/reembolso.png'
-import { Background, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerDivTick, ContainerHr, ContainerIconSecurePrivate, ContainerSectionOne, ContainerSectionTwo, ContainerSecureSubText, ContainerTextTick, ContainerTitle, GraficoInvest, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SmoothScrollLink, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
+import { Background, BackgroundMobile, Boxgeneral, ConatinerBoxIcon, ConatinerBoxText, ConatinerBoxTitle, ContactInfo, ContainerArrowDown, ContainerArrowSecure, ContainerBoxsecure, ContainerChart, ContainerContact, ContainerDivTick, ContainerHr, ContainerIconSecurePrivate, ContainerLanding, ContainerSectionOne, ContainerSectionTwo, ContainerSecure, ContainerSecureH2, ContainerSecureSubText, ContainerSecureTitle, ContainerTextTick, ContainerTitle, GraficoInvest, MainContainerSecure, MainContainerTitleSecure, RoundedImageContainer, SecurePrivate, SecureSubText, SecureText, SmoothScrollLink, SubTitleChart, TitleChart, TitleContact, WordlBitcoin } from "./style.ts";
 import '../../styles/styles.css'
 import { FaArrowCircleDown } from 'react-icons/fa';
 import { TiTick } from "react-icons/ti";
 import Navbar from "../Navbar/Navbar";
 import BarChart from "../../Graphics/BarChart";
 import Contact from "../Contact/Contact.tsx";
+import builtCrypto from '../../imgs/builtCrypto.jpeg'
 
 
 function Home() {
@@ -33,21 +34,21 @@ function Home() {
   };
 
   return (
-    <div className="App">
-      <div>
-        <Background src={phonebit} alt="Back"/>
+    <div className="App" >
+      <ContainerLanding> 
         <Navbar />
-        
-        <SmoothScrollLink href="#Secure"onClick={handleSmoothScroll}>
-          <ContainerArrowDown>
-            <FaArrowCircleDown size={35} color="white"/>
-          </ContainerArrowDown>
-        </SmoothScrollLink>
-        <SecurePrivate>
-          <SecureText id="Secure">Secure & Private </SecureText>
-        </SecurePrivate>
-        
-        <ContainerBoxsecure>
+      </ContainerLanding>
+
+      <ContainerArrowSecure href="#Secure"onClick={handleSmoothScroll}>
+        <FaArrowCircleDown size={35} color="white"/>
+      </ContainerArrowSecure>
+
+      <ContainerSecure id="secure">
+        <ContainerSecureH2>Secure & Private</ContainerSecureH2>
+      </ContainerSecure>
+
+      
+          <ContainerBoxsecure>
           <Boxgeneral>
             <ConatinerBoxIcon><img src={iconBitcoin} alt="Bitcoin" style={{width: '65px'}}></img></ConatinerBoxIcon>
             <div style={{marginTop: '10px'}}><ConatinerBoxTitle>Invest in Crypto</ConatinerBoxTitle></div>
@@ -108,22 +109,19 @@ function Home() {
               </ContainerIconSecurePrivate>
             </ConatinerBoxText>
           </Boxgeneral>
-        </ContainerBoxsecure>
+          </ContainerBoxsecure>
 
-        
-        <ContainerChart>
-          <TitleChart>Cryptocurrency Exchange Security Index: Assessment of Leading Platforms</TitleChart>
-          <ContainerHr/>
-          <SubTitleChart>An In-Depth Analysis of Cryptocurrency Exchange Security: Navigating the Landscape of Leading Platforms for Informed Investment Decisions.</SubTitleChart>
-          <BarChart data={securityPercentages} />
-          {/* <RoundedImageContainer>
-            <WordlBitcoin src={circuloBt} alt="Imagen Redonda" />
-          </RoundedImageContainer> */}
-        </ContainerChart>
+          <ContainerChart>
+            <TitleChart>Cryptocurrency Exchange Security Index: Assessment of Leading Platforms</TitleChart>
+            <ContainerHr/>
+            <SubTitleChart>An In-Depth Analysis of Cryptocurrency Exchange Security: Navigating the Landscape of Leading Platforms for Informed Investment Decisions.</SubTitleChart>
+            <BarChart data={securityPercentages} />
+          </ContainerChart>
 
-        <Contact />
+          <Contact />
         
-      </div>
+
+
     </div>
   );
 }

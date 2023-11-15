@@ -24,6 +24,10 @@ export const ContainerUlLi = styled.li`
     border-radius: 20px;
     padding: 5px;
   }
+
+  @media (max-width: 1100px) {
+    display: none;
+  }  
 `;
 
 export const ContainerMainNavbar = styled.div`

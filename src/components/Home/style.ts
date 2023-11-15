@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import builtCrypto from '../../imgs/builtCrypto.jpeg'
+import phonebit from '../../imgs/phonebit.jpg'
 
 export const Background = styled.img`
  width: 90%;
@@ -9,6 +11,17 @@ export const Background = styled.img`
   border-radius: 106px;
   padding: 3%;
   margin-left: 2%;
+
+  @media (max-width: 740px) {
+    display: none;
+  }
+`;
+
+export const BackgroundMobile = styled.img`
+  @media (min-width: 740px) {
+    display: none;
+   width: 100%;
+  }
 `;
 
 export const RoundedImageContainer = styled.div`
@@ -56,23 +69,20 @@ export const ContainerArrowDown = styled.a`
 export const SmoothScrollLink = styled.a`
   
 `;
-
-export const SecurePrivate = styled.div`
-  position: absolute;
-  margin: 50%;
-  width: 300px;
-  margin-top: 58%;
-  margin-left: 42%;
-`;
-
-export const SecureText = styled.p`
-  font-size: 35px;
-  color: whitesmoke;
-  font-family: 'Poppins', sans-serif;
-`;
+;
 
 export const ContainerBoxsecure = styled.div`
   display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 3%;
+
+  @media (max-width: 740px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
 `;
 
 export const Boxgeneral = styled.div`
@@ -85,14 +95,18 @@ export const Boxgeneral = styled.div`
   border: 1px solid violet;
   border-radius: 20px;
   padding: 35px;
-  margin-top: 72%;
-  margin-left: 7%;
+  
+  
   box-shadow: 2px 2px 2px 2px violet;
   /* opacity: 0.6; */
 
   /* &:hover {
     background: linear-gradient(to bottom, #C31432, #240046);
   } */
+
+  @media (max-width: 740px) {
+    margin-top: 13%;
+  }
 `;
 
 export const ConatinerBoxIcon = styled.div`
@@ -160,8 +174,13 @@ export const ContainerSubChart = styled.div`
 export const ContainerContact = styled.div`
   margin-top: 100px;
   height: auto;
-  width: 105.2%;
+  width: 100%;
   display: flex;
+
+  @media (max-width: 740px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ContainerSectionOne = styled.div`
@@ -171,12 +190,20 @@ display: flex;
 flex-direction: column;
 align-items: center;
 /* border-radius: 10px 10px 10px 10px; */
+
+@media (max-width: 740px) {
+  width: 100%;
+}
 `;
 
 export const ContainerSectionTwo = styled.div`
   background-color: #f2e9e4;
   width: 60%;
   /* border-radius: 10px 10px 10px 10px; */
+
+  @media (max-width: 740px) {
+  width: 100%;
+}
 `;
 
 export const TitleContact = styled.h2`
@@ -210,4 +237,56 @@ export const ContainerDivTick = styled.div`
 
 export const ContainerTextTick = styled.div`
 
+`;
+
+////////////////////////////////////////////////////////////////////
+
+
+export const MainContainerTitleSecure  = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+`;
+
+export const ContainerLanding = styled.div`
+width: 95%;
+height: 100vh;
+margin-left: 2.5%;
+background-size: cover;
+background-image: url(${phonebit});
+position: relative;
+border-radius: 76px;
+margin-right: 2.5%;
+
+@media (max-width: 740px) {
+  width: 100%;
+  height: 100vh; /* Cambiado a viewport height para asegurarse de que ocupe toda la pantalla */
+  background-size: cover;
+  background-image: url(${builtCrypto});
+  margin: 0;
+  border-radius: 0px;
+}
+`;
+
+export const ContainerArrowSecure = styled.div`
+  position: absolute;
+  bottom: 10%; 
+  left: 50%; 
+  transform: translate(-50%, 50%); 
+  z-index: 2; 
+  cursor: pointer; 
+`;
+
+export const ContainerSecure = styled.div`
+  display: flex;
+  margin-top: 7%;
+  justify-content: center;
+`;
+
+export const ContainerSecureH2 = styled.h2`
+  font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
+  font-size: 30px;
+  text-align: center;
 `;

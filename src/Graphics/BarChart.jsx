@@ -10,7 +10,6 @@ const BarChart = ({ data }) => {
     if (chartRef.current) {
       const ctx = chartRef.current.getContext('2d');
 
-      
       if (myChart) {
         myChart.destroy();
       }
@@ -59,7 +58,6 @@ const BarChart = ({ data }) => {
       });
     }
 
-    
     return () => {
       if (myChart) {
         myChart.destroy();
@@ -67,7 +65,7 @@ const BarChart = ({ data }) => {
     };
   }, [data]);
 
-  return <canvas ref={chartRef} style={{ maxWidth: '800px', maxHeight: '65%', marginLeft: '25%' }} />;
+  return <canvas ref={chartRef} style={{ width: '100%', height: 'auto', maxWidth: '800px', maxHeight: '65%', marginLeft: '25%' }} />;
 };
 
 export default BarChart;

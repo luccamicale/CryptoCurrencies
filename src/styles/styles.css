@@ -1,10 +1,6 @@
 body {
   background-color: #11151c;
-  /* background: linear-gradient(to bottom, #240046, #3e1f47); */
-  width: 95%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
   margin: 0px;
 }
 
@@ -77,4 +73,3 @@ input[type="submit"]:hover {
   width: 25%;
   font-size: 18px;
 }
-
