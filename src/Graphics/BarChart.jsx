@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
+import { ContainerCanvas, MainConatinerCanvas } from '../components/Home/style.ts';
 
 const BarChart = ({ data }) => {
   const chartRef = useRef();
@@ -65,7 +66,9 @@ const BarChart = ({ data }) => {
     };
   }, [data]);
 
-  return <canvas ref={chartRef} style={{ width: '100%', height: 'auto', maxWidth: '800px', maxHeight: '65%', marginLeft: '25%' }} />;
+  return <MainConatinerCanvas>
+    <ContainerCanvas ref={chartRef} />;
+  </MainConatinerCanvas>
 };
 
 export default BarChart;

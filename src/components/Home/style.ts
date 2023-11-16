@@ -292,3 +292,29 @@ export const ContainerSecureH2 = styled.h2`
   text-align: center;
 `;
 
+export const MainConatinerCanvas = styled.div`
+display: flex;
+justify-content: center;
+width: 100%;
+height: 600px;
+margin-bottom: -150px;
+
+@media (max-width: 740px) {
+  height: 600px;
+  width: 100%;
+  margin-bottom: -350px;
+}
+`;
+
+export const ContainerCanvas = styled.canvas`
+  width: 100%;
+  height: auto;
+  max-width: 70%;
+  max-height: 65%;
+
+  @media (max-width: 740px) {
+    min-width: 100px;
+    height: 600px;
+    max-height: 100%;
+  }
+`;

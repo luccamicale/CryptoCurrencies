@@ -39,12 +39,12 @@ function Home() {
         <Navbar />
       </ContainerLanding>
 
-      <ContainerArrowSecure href="#Secure"onClick={handleSmoothScroll}>
+      <ContainerArrowSecure href="#secure"onClick={handleSmoothScroll}>
         <FaArrowCircleDown size={35} color="white"/>
       </ContainerArrowSecure>
 
       <ContainerSecure id="secure">
-        <ContainerSecureH2>Secure & Private</ContainerSecureH2>
+        <ContainerSecureH2 id="secure">Secure & Private</ContainerSecureH2>
       </ContainerSecure>
 
       
