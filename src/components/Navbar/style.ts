@@ -37,6 +37,13 @@ export const ContainerUlLi = styled.li`
    font-size: 10px;
    display: flex;
    margin-top: -50px;
+
+   &:hover {
+    background-color: transparent;
+    color: black;
+    /* border-radius: 20px;
+    padding: 5px; */
+  }
   }
 `;
 
