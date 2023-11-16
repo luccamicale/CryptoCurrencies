@@ -222,10 +222,10 @@ export const Input = styled.input`
 export const ContactInfo = styled.span`
   color: whitesmoke;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 25px;
   font-family: 'Poppins', sans-serif;
   font-weight: 100;
-  /* margin-left: 10%; */
 `;
 
 export const ContainerIconSecurePrivate = styled.div`
