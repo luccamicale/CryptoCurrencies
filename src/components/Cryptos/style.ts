@@ -77,13 +77,14 @@ export const ContainerTitleCrypto = styled.h2`
 
 export const ContainerButtonFilter = styled.div`
   gap: 20px;
-  margin-left: 9%;
+  width: 80%;
 
    @media (max-width: 740px) {
     display: flex;
     font-size: 10px;
     gap: 1px;
-    width: 105%;
+    width: 100%;
+    margin-left: 10%;
    }
 `;
 
@@ -94,7 +95,6 @@ export const ButtonFilter = styled.button`
   justify-content: space-between;
   color: whitesmoke;
   margin-top: 20px;
-  margin-left: 10px;
   background-color: #8a817c;
   font-family: 'Poppins', sans-serif;
 
@@ -112,8 +112,10 @@ export const ContainerInput = styled.div`
 
 export const ContainerMainInputButton = styled.div`
   display: flex;
-  gap: 36%;
+  width: 90%;
   margin-top: 50px;
+  margin-left: 2.5%;
+  justify-content: space-between;
 
   @media (max-width: 740px) {
     display: flex;
