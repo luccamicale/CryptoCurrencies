@@ -8,6 +8,10 @@ export const ContainerNavUL = styled.ul`
   position: absolute;
   margin-left: 67%;
   margin-top: 90px;
+
+  @media (max-width: 740px) {
+   margin-left: 24%;
+  }
 `;
 
 export const ContainerUlLi = styled.li`
@@ -27,7 +31,13 @@ export const ContainerUlLi = styled.li`
 
   @media (max-width: 1100px) {
     display: none;
-  }  
+  }
+
+  @media (max-width: 740px) {
+   font-size: 10px;
+   display: flex;
+   margin-top: -50px;
+  }
 `;
 
 export const ContainerMainNavbar = styled.div`
