@@ -21,7 +21,6 @@ export const ContainerCryptosLi = styled.li`
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   border-radius: 6px;
-  margin-left: 2.3%;
   border: 1 px solid #353535;
   
   h2 {
@@ -53,6 +52,13 @@ export const ContainerCryptosLi = styled.li`
     background: linear-gradient(193.68deg, rgb(47, 48, 54) 0.68%, rgb(0, 0, 0) 100.48%);
     
   }
+
+  @media (max-width: 740px) {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: -4.5%;
+  }
 `;
 
 export const ContainerTitleCrypto = styled.h2`
@@ -63,11 +69,22 @@ export const ContainerTitleCrypto = styled.h2`
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
   margin-left: 5%;
+
+  @media (max-width: 740px) {
+    font-size: 25px;
+  }
 `;
 
 export const ContainerButtonFilter = styled.div`
   gap: 20px;
-  margin-left: 5%;
+  margin-left: 9%;
+
+   @media (max-width: 740px) {
+    display: flex;
+    font-size: 10px;
+    gap: 1px;
+    width: 105%;
+   }
 `;
 
 export const ButtonFilter = styled.button`
@@ -80,6 +97,13 @@ export const ButtonFilter = styled.button`
   margin-left: 10px;
   background-color: #8a817c;
   font-family: 'Poppins', sans-serif;
+
+  @media (max-width: 740px) {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  
 `;
 
 export const ContainerInput = styled.div`
@@ -88,8 +112,16 @@ export const ContainerInput = styled.div`
 
 export const ContainerMainInputButton = styled.div`
   display: flex;
-  gap: 46%;
+  gap: 36%;
   margin-top: 50px;
+
+  @media (max-width: 740px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    gap: 20%;
+  }
 `;
 
 export const ContainerSeeMore = styled.div`
@@ -135,23 +167,42 @@ export const ContainerDivCryptoChartBoxes = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 55px;
+
+  @media (max-width: 740px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const ContainerBitcoinChart = styled.div`
-  width: 55%;
-  margin-left: 5%;
+  width: 100%;
+  display: flex;
   border-radius: 6px;
   background: linear-gradient(193.68deg, rgb(47, 48, 54) 0.68%, rgb(0, 0, 0) 100.48%);
+
+  @media (max-width: 740px) {
+    display: flex;
+    
+  }
 `;
 
 export const MainContainerBoxesCryptos = styled.div`
 display: flex;
 flex-direction: column;
 margin-left: 5%;
+
+@media (max-width: 740px) {
+  margin-left: -5%;
+}
 `;
 
 export const TextCryptoBox = styled.span`
   color: whitesmoke;
   font-family: Raleway,sans-serif;
   text-align: center;
+`;
+
+
+export const ContainerBitChart = styled.div`
+  display: flex;
 `;

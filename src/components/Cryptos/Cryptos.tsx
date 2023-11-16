@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import '../../styles/styles.css';
 import Navbar from "../Navbar/Navbar";
-import { ButtonFilter, ContainerBoxCrypto, ContainerButtonFilter, ContainerButtonSeeMore, ContainerCryptosLi, ContainerCryptosUl, ContainerDivBoxes, ContainerDivCryptoChartBoxes, ContainerImgBitcoin, ContainerInput, ContainerMainInputButton, ContainerSeeMore, ContainerTitleCrypto, MainContainerBoxesCryptos, TextCryptoBox } from "./style.ts";
+import { ButtonFilter, ContainerBitChart, ContainerBoxCrypto, ContainerButtonFilter, ContainerButtonSeeMore, ContainerCryptosLi, ContainerCryptosUl, ContainerDivBoxes, ContainerDivCryptoChartBoxes, ContainerImgBitcoin, ContainerInput, ContainerMainInputButton, ContainerSeeMore, ContainerTitleCrypto, MainContainerBoxesCryptos, TextCryptoBox } from "./style.ts";
 import CryptoChart from "../../Graphics/BitChart";
 import { FaBitcoin } from 'react-icons/fa';
 import { SiBitcoin } from 'react-icons/si';
 import Contact from "../Contact/Contact.tsx";
+
 
 
 function Crypto() {
@@ -33,7 +34,9 @@ function Crypto() {
       <Navbar />
       <ContainerTitleCrypto>Exploring the Cryptocurrency Universe: The Top 100</ContainerTitleCrypto>
       <ContainerDivCryptoChartBoxes>
-      <CryptoChart />
+        <ContainerBitChart>
+          <CryptoChart />
+        </ContainerBitChart>
         <MainContainerBoxesCryptos>
           <ContainerBoxCrypto>
           {cryptoData
@@ -73,6 +76,9 @@ function Crypto() {
           </ContainerBoxCrypto>
         </MainContainerBoxesCryptos>
       </ContainerDivCryptoChartBoxes>
+
+
+
       <ContainerMainInputButton>
         <ContainerButtonFilter>
           <ButtonFilter onClick={() => handleFilter("price")}>Filter by Price</ButtonFilter>
@@ -90,6 +96,8 @@ function Crypto() {
           />
         </ContainerInput>
       </ContainerMainInputButton>
+
+      
       <ContainerCryptosUl>
         <ContainerCryptosLi>
           <h2>Rank</h2>

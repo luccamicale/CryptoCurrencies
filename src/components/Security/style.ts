@@ -10,18 +10,28 @@ export const ContainerTitleSecurity = styled.h2`
   margin-top: 120px;
   width: 60%;
   font-size: 29px;
+
+  @media (max-width: 740px) {
+   font-size: 23px;
+   width: 100%;
+  }
 `;
 
 export const ContainerSubTitleSecurity = styled.span`
   width: 95%;
   font-family: 'Poppins', sans-serif;
   color: whitesmoke;
+
+  @media (max-width: 740px) {
+   font-size: 14px;
+   
+  }
 `;
 
 export const MainContainerSubandTitle = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 20%;
+  
   width: 70%;
   font-family: 'Poppins', sans-serif;
 `;
@@ -35,12 +45,18 @@ export const ContainerButtonSecurity = styled.button`
   border: 1px solid violet;
   background-color: violet;
   border-radius: 20px;
+
+  @media (max-width: 740px) {
+   
+   width: 45%;
+   font-size: 13px;
+  }
 `;
 
 export const ContainerMinBoxSecurity = styled.div`
   display: flex;
   flex-direction: row;
-  margin-left: 5%;
+  
   margin-top: 65px;
 `;
 export const ContainerDivMinBox = styled.button`
@@ -65,7 +81,7 @@ export const ContainerAButtonPlat = styled.a`
 export const ContainerIntroSecurity = styled.div`
   display: flex;
   justify-content: center;
-  margin-left: 4%;
+  
   
 `;
 
@@ -92,18 +108,17 @@ export const MainContainerThreadRisk = styled.div`
 `;
 
 export const MainContainerRisk = styled.div`
-  width: 30.5%;
+  width: 31.8%;
   height: auto;
   display: flex;
   flex-direction: column;
   border: 1px solid violet;
   padding: 25px;
   margin-top: 45px;
-  margin-left: 4%;
 `;
 
 export const MainContainerThread = styled.div`
-  width: 30.5%;
+  width: 31.8%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -120,6 +135,10 @@ export const ContainerTitleRisk = styled.h3`
 export const ContainerTextRisk = styled.span`
   color: whitesmoke;
   font-family: 'Poppins', sans-serif;
+
+  @media (max-width: 740px) {
+   font-size: 13px;
+  }
 `;
 
 export const ContainerTips = styled.h3`
@@ -140,4 +159,27 @@ export const ContainerDivIconTips = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 10px;
+`;
+
+export const MainContainerSecurity = styled.div`
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+
+  
+`;
+
+export const ContainerIconCardano = styled.div`
+  display: flex;
+  margin-top: 8%;
+
+  @media (max-width: 740px) {
+   display: none;
+  }
+`;
+
+export const ContainerAButtonSecurity = styled.a`
+  @media (max-width: 740px) {
+   width: 100%;
+  }
 `;

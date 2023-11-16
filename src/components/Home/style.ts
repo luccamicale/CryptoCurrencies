@@ -105,7 +105,8 @@ export const Boxgeneral = styled.div`
   } */
 
   @media (max-width: 740px) {
-    margin-top: 13%;
+    margin-top: 20%;
+    width: 250px;
   }
 `;
 
@@ -290,3 +291,4 @@ export const ContainerSecureH2 = styled.h2`
   font-size: 30px;
   text-align: center;
 `;
+

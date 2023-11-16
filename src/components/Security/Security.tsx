@@ -2,7 +2,7 @@ import React from "react";
 import '../../styles/styles.css'
 import Navbar from "../Navbar/Navbar";
 import '../Security/style.ts'
-import { ContainerAButtonPlat, ContainerButtonSecurity, ContainerDivIconTips, ContainerDivMinBox, ContainerIntroSecurity, ContainerIntroSpanSec, ContainerMinBoxSecurity, ContainerOneCard, ContainerSecurityOne, ContainerSecurityTwo, ContainerSpanSecurity, ContainerSpanSecurityTwo, ContainerSpanTips, ContainerSubTitleSecurity, ContainerTextRisk, ContainerTips, ContainerTitleIntroSec, ContainerTitleRisk, ContainerTitleSecurity, MainContainerRisk, MainContainerSubandTitle, MainContainerThread, MainContainerThreadRisk } from "../Security/style.ts";
+import { ContainerAButtonPlat, ContainerAButtonSecurity, ContainerButtonSecurity, ContainerDivIconTips, ContainerDivMinBox, ContainerIconCardano, ContainerIntroSecurity, ContainerIntroSpanSec, ContainerMinBoxSecurity, ContainerOneCard, ContainerSecurityOne, ContainerSecurityTwo, ContainerSpanSecurity, ContainerSpanSecurityTwo, ContainerSpanTips, ContainerSubTitleSecurity, ContainerTextRisk, ContainerTips, ContainerTitleIntroSec, ContainerTitleRisk, ContainerTitleSecurity, MainContainerRisk, MainContainerSecurity, MainContainerSubandTitle, MainContainerThread, MainContainerThreadRisk } from "../Security/style.ts";
 import { MdOutlineSecurity } from 'react-icons/md';
 import { CgDanger } from 'react-icons/cg';
 import { AiOutlineTransaction } from 'react-icons/ai';
@@ -19,16 +19,16 @@ function Security() {
   return (
     <div>
       <Navbar />
-      <div style={{display: 'flex', flexDirection: 'row', gap: '50px', marginTop: '100px'}}>
+      <MainContainerSecurity>
         <MainContainerSubandTitle>
           <ContainerTitleSecurity>Protecting your digital treasure: security in the cryptocurrency universe</ContainerTitleSecurity>
           <ContainerSubTitleSecurity> This journey unveils strategies to fortify your assets, from encryption protocols to blockchain intricacies. Navigate the digital finance landscape with confidence and safeguard your holdings in this dynamic realm."</ContainerSubTitleSecurity>
-          <a href="https://www.coinbase.com/es">
+          <ContainerAButtonSecurity href="https://www.coinbase.com/es">
             <ContainerButtonSecurity>Go to Coinbase</ContainerButtonSecurity>
-          </a>
+          </ContainerAButtonSecurity>
         </MainContainerSubandTitle>
-        <div style={{display: ' flex', marginRight: '200px', marginTop: '110px'}}><SiCardano size={230} color="white"/></div>
-      </div>
+        <ContainerIconCardano><SiCardano size={230} color="white"/></ContainerIconCardano>
+      </MainContainerSecurity>
 
       <ContainerMinBoxSecurity>
         <ContainerAButtonPlat href="https://www.binance.com/es-AR"><ContainerDivMinBox>Binance</ContainerDivMinBox></ContainerAButtonPlat>

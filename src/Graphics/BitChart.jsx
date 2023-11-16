@@ -83,8 +83,8 @@ function CryptoChart() {
 
   return (
     <ContainerBitcoinChart>
-      <h2 style={{color: '#c72cff', fontFamily: 'Tajawal,sans-serif', fontWeight: '100'}}>The Most Important Crypto Currency: Bitcoin</h2>
-      <canvas id="bitcoinChart" width="400" height="200"></canvas>
+      <h2 style={{color: '#c72cff', fontFamily: 'Tajawal,sans-serif', fontWeight: '100'}}></h2>
+      <canvas id="bitcoinChart" width="800" height="400"></canvas>
     </ContainerBitcoinChart>
   );
 }
